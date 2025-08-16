@@ -32,11 +32,11 @@
             transform: scaleX(1);
             transform-origin: bottom left;
         }
-        .project-card {
+        .project-card, .friend-card {
             border: 1px solid #e5e7eb; /* Light gray border */
             transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
         }
-        .project-card:hover {
+        .project-card:hover, .friend-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
         }
@@ -61,6 +61,7 @@
             <nav class="hidden md:flex space-x-8">
                 <a href="#projects" class="nav-link text-gray-600 hover:text-blue-500">Projects</a>
                 <a href="#about" class="nav-link text-gray-600 hover:text-blue-500">About</a>
+                <a href="#friends" class="nav-link text-gray-600 hover:text-blue-500">Friends</a>
                 <a href="#contact" class="nav-link text-gray-600 hover:text-blue-500">Contact</a>
             </nav>
             <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
@@ -70,6 +71,7 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
             <a href="#projects" class="block py-3 px-6 text-gray-600 hover:bg-gray-50">Projects</a>
             <a href="#about" class="block py-3 px-6 text-gray-600 hover:bg-gray-50">About</a>
+            <a href="#friends" class="block py-3 px-6 text-gray-600 hover:bg-gray-50">Friends</a>
             <a href="#contact" class="block py-3 px-6 text-gray-600 hover:bg-gray-50">Contact</a>
         </div>
     </header>
@@ -104,7 +106,7 @@
             </div>
         </section>
 
-        <!-- Projects Section (Corrected Structure) -->
+        <!-- Projects Section -->
         <section id="projects" class="py-24">
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
                 Things I've Built
@@ -256,6 +258,37 @@
                         This website is where I share my journey what I’m learning, what I can build, and how I’m
                         growing as a developer.
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Friends Section -->
+        <section id="friends" class="py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">My Friends</h2>
+                <div class="grid gap-8 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+                    
+                    <!-- Friend Card 1 -->
+                    <div class="friend-card bg-white rounded-lg overflow-hidden text-center p-8">
+                        <img src="fajar.jpg" alt="Friend 1" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
+                        <h3 class="text-xl font-bold text-gray-900">Fajar</h3>
+                        <p class="text-gray-500 mb-4">ceria org nyah</p>
+                    </div>
+
+                    <!-- Friend Card 2 -->
+                    <div class="friend-card bg-white rounded-lg overflow-hidden text-center p-8">
+                        <img src="raynar.jpg" alt="Friend 2" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
+                        <h3 class="text-xl font-bold text-gray-900">Raynar</h3>
+                        <p class="text-gray-500 mb-4">Ceria juga orang nyah</p>
+                    </div>
+
+                    <!-- Friend Card 3 -->
+                    <div class="friend-card bg-white rounded-lg overflow-hidden text-center p-8">
+                        <img src="Imam.jpg" alt="Friend 3" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
+                        <h3 class="text-xl font-bold text-gray-900">Imam</h3>
+                        <p class="text-gray-500 mb-4">Paling Ceria dari yang lain</p>
+                    </div>
+
                 </div>
             </div>
         </section>
